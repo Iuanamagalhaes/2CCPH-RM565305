@@ -32,10 +32,10 @@ public class Veiculo {
             return;
         }
         if (litroGasto < 0) {
-            System.err.println("Erro de Segurança: ");
+            System.err.println("Erro de Segurança: Insira um valor válido.");
         }
         this.quantidadeTotalCombustivel -= litroGasto;
-        System.out.println("Gasto registrado! Quantidade atual: " + this.quantidadeTotalCombustivel + " litros.");
+        System.out.println("Gasto de "+ litroGasto  +" egistrado! Quantidade atual: " + this.quantidadeTotalCombustivel + " litros.");
     }
 
 

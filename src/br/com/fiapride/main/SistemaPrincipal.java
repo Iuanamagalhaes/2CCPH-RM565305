@@ -9,7 +9,7 @@ public class SistemaPrincipal {
 
         Veiculo veiculo1 = new Veiculo("Carlos", "ABC-1234", "HB20",50.0);
 
-        System.out.println("+----------------- Informações do veículo -----------------+");
+        System.out.println("+----------------- Informações do veículo 1 -----------------+");
         System.out.println("| Dono: " + veiculo1.getNomeDono());
         System.out.println("| Placa: " + veiculo1.getPlaca());
         System.out.println("| Modelo: " + veiculo1.getModelo());
@@ -19,10 +19,22 @@ public class SistemaPrincipal {
         System.out.println(">>> Abastecer " + veiculo1.getModelo() + " de " + veiculo1.getNomeDono());
         veiculo1.abastecerVeiculo(50.0);
         System.out.println("\n--- Realizando Viagens ---\n");
-        System.out.println(">>> Veículo gastou 10L durante a viagem.");
+        System.out.println(">>> Veículo gastou combustível durante a viagem.");
         veiculo1.gastarCombustivel(10.0);
 
+        Veiculo veiculo2 = new Veiculo("José", "ABD-1534", "Fiat Toro",60.0);
 
-
+        System.out.println("+----------------- Informações do veículo 1 -----------------+");
+        System.out.println("| Dono: " + veiculo2.getNomeDono());
+        System.out.println("| Placa: " + veiculo2.getPlaca());
+        System.out.println("| Modelo: " + veiculo2.getModelo());
+        System.out.println("| Capacidade do tanque: " + veiculo2.getCapacidadeTanque());
+        System.out.println("| Quantidade total de combustível atual: " + veiculo2.getQuantidadeTotalCombustivel());
+        System.out.println("+----------------------------------------------------------+\n");
+        System.out.println(">>> Abastecer " + veiculo2.getModelo() + " de " + veiculo2.getNomeDono());
+        veiculo2.abastecerVeiculo(40.0);
+        System.out.println("\n--- Realizando Viagens ---\n");
+        System.out.println(">>> Veículo gastou combustível durante a viagem.");
+        veiculo2.gastarCombustivel(30.0);
     }
 }
